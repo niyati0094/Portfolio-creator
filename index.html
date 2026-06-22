@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="form-section">
+        <h1>Portfolio Generator</h1>
+
+        <input type="text" id="name" placeholder="Enter Your Name">
+
+        <input type="text" id="photo" placeholder="Enter Profile Image URL">
+
+        <textarea id="about" placeholder="About Yourself"></textarea>
+
+        <input type="text" id="education" placeholder="Education">
+
+        <input type="text" id="skills" placeholder="Skills (Comma Separated)">
+
+        <textarea id="projects" placeholder="Projects"></textarea>
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <button onclick="generatePortfolio()">
+            Generate Portfolio
+        </button>
+    </div>
+
+    <div class="portfolio-section" id="portfolio">
+
+        <img id="pImage" src="" alt="Profile Image">
+
+        <h2 id="pName">Your Name</h2>
+
+        <h3>About Me</h3>
+        <p id="pAbout"></p>
+
+        <h3>Education</h3>
+        <p id="pEducation"></p>
+
+        <h3>Skills</h3>
+        <p id="pSkills"></p>
+
+        <h3>Projects</h3>
+        <p id="pProjects"></p>
+
+        <h3>Contact</h3>
+        <p id="pEmail"></p>
+        <p id="pPhone"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
